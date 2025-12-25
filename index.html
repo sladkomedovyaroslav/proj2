@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>РЖД — Бронирование билетов</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">РЖД</div>
+    <div class="nav-links">
+      <a href="trains.html" target="_blank">Поезда</a>
+      <a href="schedule.html" target="_blank">Расписание</a>
+      <a href="contacts.html" target="_blank">Контакты</a>
+      <button id="orderBtn">Оформить заказ</button>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <video src="assets/video.mp4" autoplay muted loop></video>
+    <h1>Путешествуйте по России с комфортом</h1>
+  </div>
+</header>
+
+<footer class="footer">© 2025 РЖД — Учебный проект</footer>
+
+<!-- Модальное окно -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Оформление заказа</h3>
+    <input id="fio" placeholder="ФИО">
+    <input id="phone" placeholder="Телефон 8XXXXXXXXXX">
+    <input id="email" placeholder="Email">
+    <input id="date" type="date">
+    <select id="from">
+      <option>Москва</option><option>Краснодар</option><option>Ростов</option>
+      <option>Сочи</option><option>Санкт-Петербург</option>
+      <option>Екатеринбург</option><option>Анапа</option>
+    </select>
+    <select id="to">
+      <option>Москва</option><option>Краснодар</option><option>Ростов</option>
+      <option>Сочи</option><option>Санкт-Петербург</option>
+      <option>Екатеринбург</option><option>Анапа</option>
+    </select>
+    <button id="submitOrder">Отправить заявку</button>
+    <button class="close">Закрыть</button>
+  </div>
+</div>
+
+<script src="js/modal.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
